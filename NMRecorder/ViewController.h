@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@import AVFoundation;
 
 @interface ViewController : UIViewController
+{
+    AVAudioPlayer *audioPlayer;
+    AVAudioRecorder *audioRecorder;
+    NSMutableDictionary *recordSetting;
+}
+- (IBAction)ActionRecord:(id)sender;
+- (IBAction)ActionPlay:(id)sender;
 
+- (IBAction)ActionStop:(id)sender;
 
 @end
 
